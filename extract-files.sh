@@ -12,7 +12,7 @@ DUMP=
 MY_DIR="${BASH_SOURCE%/*}"
 SRC_ROOT="${MY_DIR}/../../.."
 TMP_DIR=$(mktemp -d)
-EXTRACT_KERNEL=true
+EXTRACT_KERNEL=false
 declare -a MODULE_FOLDERS=("vendor_ramdisk" "vendor_dlkm")
 
 while [ "${#}" -gt 0 ]; do
